@@ -4,11 +4,11 @@
     <ul class="navbar-nav ms-auto">
       <li class="nav-item" ngbDropdown>
         <a class="nav-link" tabindex="0" ngbDropdownToggle role="button">
-            <img src="assets/{{ selectedLanguage }}.svg" alt="language flag" class="navbar__flag">
+            <img src="assets/flags/{{ selectedLanguage }}.svg" alt="language flag" class="navbar__flag">
         </a>
         <div ngbDropdownMenu aria-labelledby="navbarDropdown" class="dropdown-menu">
             <button ngbDropdownItem *ngFor="let language of defaultLocales.locales" (click)="changeLanguage(language.code)">
-                <img src="assets/{{ language.code }}.svg" alt="language flag" class="navbar__flag">
+                <img src="assets/flags/{{ language.code }}.svg" alt="language flag" class="navbar__flag">
                 {{ language.label }}
             </button>
         </div>
