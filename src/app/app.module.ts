@@ -16,6 +16,7 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { SharedModule } from './shared/shared.module';
 import { PhotosWidgetComponent } from './map-page/components/photos-widget/photos-widget.component';
+import { PhotosModalComponent } from './map-page/components/photos-widget/photos-modal/photos-modal.component';
 
 @NgModule({
     declarations: [
@@ -25,7 +26,8 @@ import { PhotosWidgetComponent } from './map-page/components/photos-widget/photo
         StatusPanelComponent,
         OverviewTabComponent,
         SendRequestSectionComponent,
-        PhotosWidgetComponent
+        PhotosWidgetComponent,
+        PhotosModalComponent
     ],
     imports: [
         BrowserModule,
