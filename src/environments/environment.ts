@@ -5,6 +5,7 @@
 import { environmentCommon } from "./environment.common";
 
 export const environment = {
+    backendUrl: 'http://localhost:8000',
     ...environmentCommon,
     production: false
 };

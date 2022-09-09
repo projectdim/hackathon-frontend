@@ -11,7 +11,7 @@ import { TranslateService } from '@ngx-translate/core';
 export class NavbarComponent {
 
     defaultLocales: DefaultLocales = defaultLocales;
-    selectedLanguage: string = 'us';
+    selectedLanguage: string = 'en';
 
     constructor(private translate: TranslateService) { }
 
