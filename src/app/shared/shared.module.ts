@@ -5,8 +5,13 @@ import { RouterModule } from "@angular/router";
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 import { TranslateModule } from "@ngx-translate/core";
 
+const exportableComponents = [
+    
+];
+
 @NgModule({
-    declarations: [],
+    declarations: [
+    ],
     imports: [
         CommonModule,
         RouterModule,
@@ -16,7 +21,7 @@ import { TranslateModule } from "@ngx-translate/core";
     ],
     exports: [
         NgbModule,
-        BrowserModule
+        BrowserModule,
     ],
 })
 export class SharedModule { }

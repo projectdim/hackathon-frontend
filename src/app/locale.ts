@@ -10,9 +10,9 @@ export interface DefaultLocales {
 
 export const defaultLocales: DefaultLocales = {
     locales: [
-        { code: 'us', label: 'English' },
+        { code: 'en', label: 'English' },
         { code: 'ua', label: 'Українська' },
-        { code: 'ru', label: 'Террорист' },
+        { code: 'ru', label: 'Русский' },
     ],
-    preferredLanguage: 'us'
+    preferredLanguage: 'en'
 };
