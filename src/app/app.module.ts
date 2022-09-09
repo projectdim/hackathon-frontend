@@ -16,12 +16,14 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { SharedModule } from './shared/shared.module';
 import { OverviewTabComponent } from './map-page/components/overview-tab/overview-tab.component';
+import { StatusPanelComponent } from './map-page/components/status-panel/status-panel.component';
 
 @NgModule({
     declarations: [
         AppComponent,
         MapPageComponent,
         MapComponent,
+        StatusPanelComponent,
         OverviewTabComponent
     ],
     imports: [
