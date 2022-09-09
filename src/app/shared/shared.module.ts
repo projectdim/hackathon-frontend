@@ -4,9 +4,16 @@ import { BrowserModule } from "@angular/platform-browser";
 import { RouterModule } from "@angular/router";
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 import { TranslateModule } from "@ngx-translate/core";
+import { StatusPanelComponent } from "./components";
+
+const exportableComponents = [
+    StatusPanelComponent,
+];
 
 @NgModule({
-    declarations: [],
+    declarations: [
+        ...exportableComponents,
+    ],
     imports: [
         CommonModule,
         RouterModule,
@@ -16,7 +23,8 @@ import { TranslateModule } from "@ngx-translate/core";
     ],
     exports: [
         NgbModule,
-        BrowserModule
+        BrowserModule,
+        ...exportableComponents,
     ],
 })
 export class SharedModule { }
