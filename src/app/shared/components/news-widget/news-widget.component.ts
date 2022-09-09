@@ -6,4 +6,8 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   styleUrls: ['./news-widget.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class NewsWidgetComponent { }
+export class NewsWidgetComponent {
+
+  newsCount: number = 9;
+
+}

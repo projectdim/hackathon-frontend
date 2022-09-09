@@ -3,3 +3,8 @@
 $font-family-sans-serif: "Inter";
 
 @import "~bootstrap/scss/bootstrap";
+
+.section-title {
+    font-weight: 600;
+    font-size: 1.125rem;
+}
