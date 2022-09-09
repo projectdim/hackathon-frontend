@@ -1,12 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Marker } from '@app/data';
 
 @Component({
     selector: 'app-overview-tab',
     templateUrl: './overview-tab.component.html',
     styleUrls: ['./overview-tab.component.scss']
 })
-export class OverviewTabComponent {
-    
-    active: number = 0;
+export class OverviewTabComponent { 
 
+    @Input()
+    marker?: Marker
+    
 }

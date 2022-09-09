@@ -1,13 +1,16 @@
-<app-photos-widget [photos]="marker?.photos"></app-photos-widget>
-<section class="mb-3">
-    <h2 class="section-title">
-        {{ 'statusPanel.statusSection.title' | translate }}
-    </h2>
-    <app-overview-tab></app-overview-tab>
-    <app-news-widget></app-news-widget>
-    <app-status-list></app-status-list>
-</section>
-<section class="mb-3">
-    <app-send-request-section></app-send-request-section>
-</section>
+<ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs nav-tabs-container">
+    <li [ngbNavItem]="0">
+        <a ngbNavLink>{{ 'tabs.overview' | translate }}</a>
+        <ng-template ngbNavContent>
+            <app-overview-tab [marker]="selectedMarker"></app-overview-tab>
+        </ng-template>
+    </li>
+    <li [ngbNavItem]="1">
+        <a ngbNavLink>{{ 'tabs.changeHistory' | translate }}</a>
+        <ng-template ngbNavContent>
+            <p>Placeholder Tab Content</p>
+        </ng-template>
+    </li>
+</ul>
+<div [ngbNavOutlet]="nav"></div>
 <app-footer></app-footer>

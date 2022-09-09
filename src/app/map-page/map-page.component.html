@@ -1,4 +1,2 @@
 <app-map [pins]="pins" (pinSelected)="handlePin($event)"></app-map>
-<pre>{{selectedPin | json}}</pre>
-<pre>{{selectedMarker | json}}</pre>
-<app-status-panel [marker]="selectedMarker"></app-status-panel>
+<app-status-panel [selectedMarker]="selectedMarker" ></app-status-panel>

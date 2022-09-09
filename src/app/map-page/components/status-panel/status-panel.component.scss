@@ -1,7 +1,18 @@
 @import '~bootstrap/scss/functions';
 @import '~bootstrap/scss/variables';
 
-:host {
-    display: block;
-    padding: map-get($spacers, 3);
+.nav-tabs.nav-tabs-container .nav-item {
+    flex: 1;
+    text-align: center;
+}
+
+.nav-tabs-container .nav-link {
+    color: $body-color;
+    font-weight: 500;
+}
+
+.nav-tabs-container .nav-link.active {
+    border-color: transparent;
+    border-bottom: 2px solid $primary;
+    color: $primary;
 }

@@ -3,7 +3,15 @@ import { RouterModule, Routes } from '@angular/router';
 import { MapPageComponent } from '@app/map-page/map-page.component';
 
 const routes: Routes = [
-    { path: 'map', component: MapPageComponent },
+    {
+        path: '',
+        pathMatch: 'full',
+        redirectTo: 'map'
+    },
+    {
+        path: 'map',
+        component: MapPageComponent
+    },
     { path: '**', component: MapPageComponent }
 ];
 
