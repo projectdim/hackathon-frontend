@@ -14,11 +14,10 @@ export interface Pin {
 
 // .../api/marker/:id
 
-export interface Marker {
-    id: string,
-    address: Adress,
-    photos: Array<Photo>,
-    statuses: Array<Status>
+export interface Marker extends Pin {
+    "address": Adress,
+    "photos": Array<Photo>,
+    "statuses": Array<Status>,
 }
 
 // GOOGLE MAPS DATA ABOUT LOCATION (?)
@@ -29,7 +28,6 @@ export interface Adress {
 }
 
 export interface Photo {
-    id: string,
     label: string,
     url: string
 }

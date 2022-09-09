@@ -1,6 +1,7 @@
 <div class="modal-header">
     <h4 class="modal-title">{{photo?.label}}</h4>
+    <button type="button" class="btn-close" aria-label="Close" (click)="activeModal.dismiss()"></button>
 </div>
 <div class="modal-body">
-    <img *ngIf="photo" [src]="photo.url">
+    <img *ngIf="photo" [src]="getParsedUrl(photo)">
 </div>

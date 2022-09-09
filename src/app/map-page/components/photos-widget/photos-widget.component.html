@@ -4,6 +4,6 @@
 </h2>
 <div class="photos-container">
     <div class="photo" *ngFor="let photo of photos" (click)="showPhotoModal(photo)">
-        <img [src]="photo.url">
+        <img [src]="getParsedUrl(photo)">
     </div>
 </div>
