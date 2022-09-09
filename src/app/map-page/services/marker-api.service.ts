@@ -18,7 +18,7 @@ export class MarkerApiService {
     constructor(private http: HttpClient) {
     }
 
-    markers(): Observable<Array<Pin>> {
+    pins(): Observable<Array<Pin>> {
         return this.http.get<Array<ApiMarker>>(`${environment.backendUrl}/markers`).pipe(map(apiMarkers => {
             return apiMarkers.map(apiMarker => {
                 return {

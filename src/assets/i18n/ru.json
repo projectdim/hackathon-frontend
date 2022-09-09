@@ -1,8 +1,25 @@
 {
     "footer": {
-        "title": "Government ContactsRU",
-        "securityService": "Security Service of UkraineRU",
-        "borderService": "State Border Guard Service of UkraineRU"
+        "title": "[RU] Government Contacts",
+        "securityService": "[RU] Security Service of Ukraine",
+        "borderService": "[RU] State Border Guard Service of Ukraine"
+    },
+    "statusPanel": {
+        "statusSection": {
+            "title": "[RU] General Status",
+            "newsWidget": {
+                "text": "[RU] Here you can find important news updates about your area.",
+                "viewBtnText": "[RU] View news"
+            }
+        },
+        "sendReuqestSection": {
+            "text": "[RU] It will be helpful if you inform us through this form about any issues by using our service.",
+            "inputPlaceholder": "[RU] Leave us a message",
+            "submitBtnText": "[RU] Send"
+        }
+    },
+    "tabs": {
+        "overview": "[RU] Overview",
+        "changeHistory": "[RU] Change History"
     }
-    
 }

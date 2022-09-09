@@ -5,4 +5,8 @@ import { Component } from '@angular/core';
     templateUrl: './overview-tab.component.html',
     styleUrls: ['./overview-tab.component.scss']
 })
-export class OverviewTabComponent { }
+export class OverviewTabComponent {
+    
+    active: number = 0;
+
+}

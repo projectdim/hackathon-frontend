@@ -1,4 +1,5 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import {ChangeDetectionStrategy, Component, Input} from '@angular/core';
+import {Marker} from '@app/data';
 
 @Component({
   selector: 'app-status-panel',
@@ -6,4 +7,9 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   styleUrls: ['./status-panel.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class StatusPanelComponent { }
+export class StatusPanelComponent {
+
+  @Input()
+  marker?: Marker
+
+}

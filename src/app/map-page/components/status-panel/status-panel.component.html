@@ -1,8 +1,13 @@
+<app-photos-widget [photos]="marker?.photos"></app-photos-widget>
 <section class="mb-3">
     <h2 class="section-title">
         {{ 'statusPanel.statusSection.title' | translate }}
     </h2>
+    <app-overview-tab></app-overview-tab>
     <app-news-widget></app-news-widget>
     <app-status-list></app-status-list>
+</section>
+<section class="mb-3">
+    <app-send-request-section></app-send-request-section>
 </section>
 <app-footer></app-footer>

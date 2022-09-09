@@ -1,0 +1,11 @@
+<ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs nav-tabs-container">
+    <li ngbNavItem [ngbNavItem]="0">
+        <a ngbNavLink>{{ 'tabs.overview' | translate }}</a>
+        <ng-template ngbNavContent>Overview content</ng-template>
+    </li>
+    <li ngbNavItem [ngbNavItem]="1">
+        <a ngbNavLink>{{ 'tabs.changeHistory' | translate }}</a>
+        <ng-template ngbNavContent>Change History content</ng-template>
+    </li>
+</ul>
+<div [ngbNavOutlet]="nav" class="my-2 nav-tabs-content"></div>
