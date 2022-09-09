@@ -60,7 +60,7 @@ export class StatusListComponent implements OnInit {
       modifiedDate: "2022-09-09T16:38:20.777994",
       // "description":""
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit interdum hendrerit ex vitae sodales.",
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus interdum hendrerit ex vitae sodales. Donec id leo ipsum. Phasellus volutpat aliquet mauris, et blandit nulla laoreet vitae. Quisque ante dui, porta eu felis nec, scelerisque pharetra turpis."
     },
     {
       id: "5456524",
