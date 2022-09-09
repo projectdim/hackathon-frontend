@@ -11,5 +11,5 @@ img{
   width: auto;
   height: auto;
 
-  border-radius: calc(var(--bs-modal-border-radius) + 0.5rem);
+  border-radius: var(--bs-modal-border-radius);
 }
