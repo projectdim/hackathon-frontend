@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-photos-widget',
@@ -7,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PhotosWidgetComponent implements OnInit {
 
-  photos:Array<any> = [].constructor(10)
-
+  @Input()
+  photos?:Array<any> = [];
 
   constructor() { }
 

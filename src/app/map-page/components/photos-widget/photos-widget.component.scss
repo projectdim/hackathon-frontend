@@ -9,6 +9,9 @@
   border : 1px solid #C5D0E3;
   min-width: 90px;
   flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .photos-container{
@@ -19,4 +22,11 @@
   flex-wrap: nowrap;
   gap: 8px;
   margin-bottom: 1rem;
+}
+
+img{
+  max-height: 90px;
+  max-width: 90px;
+  width: auto;
+  height: auto;
 }
