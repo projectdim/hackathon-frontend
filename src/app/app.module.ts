@@ -14,12 +14,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { defaultLocales } from './locale';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { OverviewTabComponent } from './map-page/components/overview-tab/overview-tab.component';
 
 @NgModule({
     declarations: [
         AppComponent,
         MapPageComponent,
-        MapComponent
+        MapComponent,
+        OverviewTabComponent
     ],
     imports: [
         BrowserModule,
