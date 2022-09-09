@@ -6,7 +6,7 @@ import { CoreModule } from '@app/core/core.module';
 import { AppInitializerProvider } from '@app/core/providers';
 import { MapPageComponent } from './map-page/map-page.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { MapComponent, StatusPanelComponent, OverviewTabComponent } from './map-page/components';
+import { MapComponent, StatusPanelComponent, OverviewTabComponent, SendRequestSectionComponent } from './map-page/components';
 import { GoogleMapsModule } from '@angular/google-maps';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { translationConfig } from './translation.config';
@@ -22,7 +22,8 @@ import { SharedModule } from './shared/shared.module';
         MapPageComponent,
         MapComponent,
         StatusPanelComponent,
-        OverviewTabComponent
+        OverviewTabComponent,
+        SendRequestSectionComponent,
     ],
     imports: [
         BrowserModule,
