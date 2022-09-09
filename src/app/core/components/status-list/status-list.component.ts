@@ -25,7 +25,7 @@ export class StatusListComponent implements OnInit {
       type: "building",
       statusKey: "intact",
       safetyLevel: true,
-      distance: "whatever",
+      distance: "",
       modifiedDate: "2022-09-09T16:38:20.777994",
       // "description":""
       description:
@@ -36,7 +36,7 @@ export class StatusListComponent implements OnInit {
       type: "electricity",
       statusKey: "stable",
       safetyLevel: true,
-      distance: "whatever",
+      distance: "",
       modifiedDate: "2022-09-09T16:38:20.777994",
       description:""
     },
@@ -45,7 +45,7 @@ export class StatusListComponent implements OnInit {
       type: "road",
       statusKey: "stable",
       safetyLevel: true,
-      distance: "whatever",
+      distance: "",
       modifiedDate: "2022-09-09T16:38:20.777994",
       // "description":""
       description:
@@ -56,7 +56,7 @@ export class StatusListComponent implements OnInit {
       type: "water",
       statusKey: "unstable",
       safetyLevel: false,
-      distance: "whatever",
+      distance: "",
       modifiedDate: "2022-09-09T16:38:20.777994",
       // "description":""
       description:

@@ -1,22 +1,23 @@
-
-
-<div class="status-item__title-wrapper">
-   <div> <div class="status-item__title--{{statusColor}}">
-        <i class="far status-item__icon  {{iconClass}} " ></i>
-        {{status.statusKey | uppercase}} 
+<!-- <div class="status-item__title-wrapper"> -->
+<div class="status-item__wrapper">
+  <!-- <div class="status-item-wrapper"> -->
+  <div class="status-item__title-wrapper">
+    <div class="status-item__title--{{ statusColor }}">
+      <i class="far status-item__icon  {{ iconClass }} "></i>
+      {{ status.statusKey | uppercase }}
     </div>
-
-</div>
-    <!-- <p>({{status.distance}}</p> -->
-    <div class="status-item__date }">
-         <!-- Aug 10, 13:15  -->
-            {{status.modifiedDate | date}}
+    <div *ngIf="status.distance" class="status-item__distance">
+      ({{ status.distance }})
     </div>
+  </div>
+
+  <!-- <p>({{status.distance}}</p> -->
+  <div class="status-item__date }">
+    <!-- Aug 10, 13:15  -->
+    {{ status.modifiedDate | date }}
+  </div>
 </div>
-<div  *ngIf="status.description" class="status-item__description">
-{{status.description}}
+<div *ngIf="status.description" class="status-item__description">
+  {{ status.description }}
 </div>
 <!-- <div class=status-item__description></div> -->
-
-
-
