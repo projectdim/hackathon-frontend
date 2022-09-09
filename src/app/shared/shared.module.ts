@@ -4,13 +4,15 @@ import { BrowserModule } from "@angular/platform-browser";
 import { RouterModule } from "@angular/router";
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 import { TranslateModule } from "@ngx-translate/core";
+import { NewsWidgetComponent } from "./components";
 
 const exportableComponents = [
-    
+    NewsWidgetComponent,
 ];
 
 @NgModule({
     declarations: [
+        ...exportableComponents,
     ],
     imports: [
         CommonModule,
@@ -22,6 +24,7 @@ const exportableComponents = [
     exports: [
         NgbModule,
         BrowserModule,
+        ...exportableComponents,
     ],
 })
 export class SharedModule { }

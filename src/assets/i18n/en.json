@@ -3,5 +3,14 @@
         "title": "Government Contacts",
         "securityService": "Security Service of Ukraine",
         "borderService": "State Border Guard Service of Ukraine"
+    },
+    "statusPanel": {
+        "statusSection": {
+            "title": "General Status",
+            "newsWidget": {
+                "text": "Here you can find important news updates about your area.",
+                "viewBtnText": "View news"
+            }
+        }
     }
 }

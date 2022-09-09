@@ -1,0 +1,25 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+
+:host {
+    display: flex;
+    align-items: center;
+    padding: map-get($spacers, 3);
+    border-radius: $border-radius;
+    background-color: $gray-100;
+}
+
+.widget__text {
+    font-size: $font-size-base * 0.875;
+}
+
+.widget__image {
+    background-color: $gray-200;
+}
+
+.widget__link {
+    display: block;
+    margin-top: map-get($spacers, 2);
+    text-decoration: none;
+    color: $primary;
+}
