@@ -1,7 +1,17 @@
 <img src="assets/Logo.svg" class="img-fluid navbar__logo" alt="app logo">
 
-<div class="navbar__langauge">
-    <img src="assets/usa.svg" alt="language flag" class="navbar__flag">
-    <span cla ss="navbar__dropdown">V</span>
+<div class="navbar__language">
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item" ngbDropdown>
+        <a class="nav-link" tabindex="0" ngbDropdownToggle role="button">
+            <img src="assets/{{ selectedLanguage }}.svg" alt="language flag" class="navbar__flag">
+        </a>
+        <div ngbDropdownMenu aria-labelledby="navbarDropdown" class="dropdown-menu">
+            <button ngbDropdownItem *ngFor="let language of defaultLocales.locales" (click)="changeLanguage(language.code)">
+                <img src="assets/{{ language.code }}.svg" alt="language flag" class="navbar__flag">
+                {{ language.label }}
+            </button>
+        </div>
+      </li>
+    </ul>
 </div>
-

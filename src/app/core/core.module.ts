@@ -1,11 +1,13 @@
 import { NgModule, Optional, SkipSelf } from '@angular/core';
 import { SharedModule } from '@app/shared/shared.module';
+import { TranslateModule } from '@ngx-translate/core';
 import { NavbarComponent } from './components';
 import { FooterComponent } from './components';
 
 @NgModule({
     imports: [
         SharedModule,
+        TranslateModule
     ],
     declarations: [
       NavbarComponent,
