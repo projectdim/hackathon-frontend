@@ -1,10 +1,10 @@
 import { NgModule, Optional, SkipSelf } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import {MapPageComponent} from '@app/map-page/map-page.component';
+import { MapPageComponent } from '@app/map-page/map-page.component';
 
 const routes: Routes = [
-    {path:'map', component: MapPageComponent},
-    {path:'**', component: MapPageComponent}
+    { path: 'map', component: MapPageComponent },
+    { path: '**', component: MapPageComponent }
 ];
 
 @NgModule({

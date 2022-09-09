@@ -2,7 +2,7 @@ import {Component, OnDestroy, OnInit, ViewChild} from '@angular/core';
 import {GeolocationService} from '@ng-web-apis/geolocation';
 import {Subject, takeUntil} from 'rxjs';
 import {GoogleMap} from '@angular/google-maps';
-import {googleMapOptions} from '@app/map-page/map/google-map.config';
+import {googleMapOptions} from '@app/map-page/components/map/google-map.config';
 import MapOptions = google.maps.MapOptions;
 
 @Component({
