@@ -14,6 +14,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { defaultLocales } from './locale';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
     declarations: [
@@ -24,6 +25,7 @@ import { environment } from '../environments/environment';
     imports: [
         BrowserModule,
         CoreModule,
+        SharedModule,
         NgbModule,
         HttpClientModule,
         TranslateModule.forRoot(translationConfig),
