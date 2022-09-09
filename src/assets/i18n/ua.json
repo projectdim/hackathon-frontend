@@ -1,5 +1,8 @@
 {
-    "placeholder": {
-        "test": "testUA"
+    "footer": {
+        "title": "Government ContactsUA",
+        "securityService": "Security Service of UkraineUA",
+        "borderService": "State Border Guard Service of UkraineUA"
     }
+    
 }
