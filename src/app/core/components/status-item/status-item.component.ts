@@ -1,14 +1,6 @@
-import { ChangeDetectionStrategy, Component, OnInit } from "@angular/core";
+import { ChangeDetectionStrategy, Component, Input, OnInit } from "@angular/core";
+import { ItemStatus } from "@app/core/interfaces";
 
-interface ItemStatus {
-  id: string;
-  type: string;
-  statusKey: string;
-  safetyLevel: boolean;
-  distance: string;
-  modifiedDate: string;
-  description: string;
-}
 
 @Component({
   selector: "app-status-item",
@@ -19,6 +11,7 @@ interface ItemStatus {
 export class StatusItemComponent implements OnInit {
   constructor() {}
 
+  @Input()
   status: ItemStatus = {
     id: "whatever",
     type: "road",

@@ -4,6 +4,7 @@ import { TranslateModule } from '@ngx-translate/core';
 import { NavbarComponent } from './components';
 import { FooterComponent } from './components';
 import { StatusItemComponent } from './components/status-item/status-item.component';
+import { StatusListComponent } from './components/status-list/status-list.component';
 
 @NgModule({
     imports: [
@@ -13,12 +14,14 @@ import { StatusItemComponent } from './components/status-item/status-item.compon
     declarations: [
       NavbarComponent,
       FooterComponent,
-      StatusItemComponent
+      StatusItemComponent,
+      StatusListComponent
     ],
     exports:[
         NavbarComponent,
         FooterComponent,
-        StatusItemComponent
+        StatusItemComponent,
+        StatusListComponent
     ]
 })
 export class CoreModule {

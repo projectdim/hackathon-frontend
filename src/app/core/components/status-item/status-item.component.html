@@ -1,10 +1,13 @@
 
 
 <div class="status-item__title-wrapper">
-    <div class="status-item__title--{{statusColor}}">
+   <div> <div class="status-item__title--{{statusColor}}">
         <i class="far status-item__icon  {{iconClass}} " ></i>
-        {{status.statusKey | uppercase}}
+        {{status.statusKey | uppercase}} 
     </div>
+
+</div>
+    <!-- <p>({{status.distance}}</p> -->
     <div class="status-item__date }">
          <!-- Aug 10, 13:15  -->
             {{status.modifiedDate | date}}
