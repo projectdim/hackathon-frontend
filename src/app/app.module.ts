@@ -8,6 +8,8 @@ import { MapPageComponent } from './map-page/map-page.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MapComponent } from './map-page/map/map.component';
 import {GoogleMapsModule} from '@angular/google-maps';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
     declarations: [
@@ -22,6 +24,12 @@ import {GoogleMapsModule} from '@angular/google-maps';
         //App routing (should be imported as the last one)
         AppRoutingModule,
         GoogleMapsModule,
+        ServiceWorkerModule.register('ngsw-worker.js', {
+          enabled: environment.production,
+          // Register the ServiceWorker as soon as the application is stable
+          // or after 30 seconds (whichever comes first).
+          registrationStrategy: 'registerWhenStable:30000'
+        }),
     ],
     providers: [
         AppInitializerProvider,
