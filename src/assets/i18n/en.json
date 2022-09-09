@@ -11,6 +11,11 @@
                 "text": "Here you can find important news updates about your area.",
                 "viewBtnText": "View news"
             }
+        },
+        "sendReuqestSection": {
+            "text": "It will be helpful if you inform us through this form about any issues by using our service.",
+            "inputPlaceholder": "Leave us a message",
+            "submitBtnText": "Send"
         }
     }
 }

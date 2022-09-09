@@ -3,6 +3,19 @@
         "title": "Government ContactsUA",
         "securityService": "Security Service of UkraineUA",
         "borderService": "State Border Guard Service of UkraineUA"
+    },
+    "statusPanel": {
+        "statusSection": {
+            "title": "[UA] General Status",
+            "newsWidget": {
+                "text": "[UA] Here you can find important news updates about your area.",
+                "viewBtnText": "[UA] View news"
+            }
+        },
+        "sendReuqestSection": {
+            "text": "[UA] It will be helpful if you inform us through this form about any issues by using our service.",
+            "inputPlaceholder": "[UA] Leave us a message",
+            "submitBtnText": "[UA] Send"
+        }
     }
-    
 }
