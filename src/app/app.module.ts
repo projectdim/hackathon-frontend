@@ -6,7 +6,7 @@ import { CoreModule } from '@app/core/core.module';
 import { AppInitializerProvider } from '@app/core/providers';
 import { MapPageComponent } from './map-page/map-page.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { MapComponent } from './map-page/components';
+import { MapComponent, StatusPanelComponent, OverviewTabComponent } from './map-page/components';
 import { GoogleMapsModule } from '@angular/google-maps';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { translationConfig } from './translation.config';
@@ -15,13 +15,13 @@ import { defaultLocales } from './locale';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { SharedModule } from './shared/shared.module';
-import { OverviewTabComponent } from './map-page/components/overview-tab/overview-tab.component';
 
 @NgModule({
     declarations: [
         AppComponent,
         MapPageComponent,
         MapComponent,
+        StatusPanelComponent,
         OverviewTabComponent
     ],
     imports: [
