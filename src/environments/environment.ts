@@ -5,7 +5,7 @@
 import { environmentCommon } from "./environment.common";
 
 export const environment = {
-    backendUrl: 'http://localhost:8000',
+    backendUrl: 'https://api.dim.dev',
     ...environmentCommon,
     production: false
 };

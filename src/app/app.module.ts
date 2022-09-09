@@ -15,6 +15,7 @@ import { defaultLocales } from './locale';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { SharedModule } from './shared/shared.module';
+import { PhotosWidgetComponent } from './map-page/components/photos-widget/photos-widget.component';
 
 @NgModule({
     declarations: [
@@ -22,7 +23,8 @@ import { SharedModule } from './shared/shared.module';
         MapPageComponent,
         MapComponent,
         StatusPanelComponent,
-        OverviewTabComponent
+        OverviewTabComponent,
+        PhotosWidgetComponent
     ],
     imports: [
         BrowserModule,
