@@ -1,2 +1,6 @@
-<img *ngIf="photo" [src]="photo.url">
-{{photo?.label}}
+<div class="modal-header">
+    <h4 class="modal-title">{{photo?.label}}</h4>
+</div>
+<div class="modal-body">
+    <img *ngIf="photo" [src]="photo.url">
+</div>
