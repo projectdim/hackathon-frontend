@@ -1,16 +1,19 @@
 import { NgModule, Optional, SkipSelf } from '@angular/core';
 import { SharedModule } from '@app/shared/shared.module';
 import { NavbarComponent } from './components';
+import { FooterComponent } from './components';
 
 @NgModule({
     imports: [
         SharedModule,
     ],
     declarations: [
-      NavbarComponent
+      NavbarComponent,
+      FooterComponent
     ],
     exports:[
         NavbarComponent,
+        FooterComponent
     ]
 })
 export class CoreModule {
