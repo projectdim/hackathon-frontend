@@ -2,7 +2,7 @@ import { APP_INITIALIZER, Provider } from "@angular/core";
 
 function appInitializerFactory() {
     return () => {
-        console.log('Initializing app...');
+        // Initialize your app here
     };
 }
 
