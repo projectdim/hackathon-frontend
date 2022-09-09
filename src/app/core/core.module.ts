@@ -3,6 +3,7 @@ import { SharedModule } from '@app/shared/shared.module';
 import { TranslateModule } from '@ngx-translate/core';
 import { NavbarComponent } from './components';
 import { FooterComponent } from './components';
+import { StatusItemComponent } from './components/status-item/status-item.component';
 
 @NgModule({
     imports: [
@@ -11,11 +12,13 @@ import { FooterComponent } from './components';
     ],
     declarations: [
       NavbarComponent,
-      FooterComponent
+      FooterComponent,
+      StatusItemComponent
     ],
     exports:[
         NavbarComponent,
-        FooterComponent
+        FooterComponent,
+        StatusItemComponent
     ]
 })
 export class CoreModule {
