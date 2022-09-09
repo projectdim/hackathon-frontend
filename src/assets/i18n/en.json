@@ -17,5 +17,9 @@
             "inputPlaceholder": "Leave us a message",
             "submitBtnText": "Send"
         }
+    },
+    "tabs": {
+        "overview": "Overview",
+        "changeHistory": "Change History"
     }
 }

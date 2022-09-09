@@ -1,8 +1,8 @@
 {
     "footer": {
-        "title": "Government ContactsUA",
-        "securityService": "Security Service of UkraineUA",
-        "borderService": "State Border Guard Service of UkraineUA"
+        "title": "[UA] Government Contacts",
+        "securityService": "[UA] Security Service of Ukraine",
+        "borderService": "[UA] State Border Guard Service of Ukraine"
     },
     "statusPanel": {
         "statusSection": {
@@ -17,5 +17,9 @@
             "inputPlaceholder": "[UA] Leave us a message",
             "submitBtnText": "[UA] Send"
         }
+    },
+    "tabs": {
+        "overview": "[UA] Overview",
+        "changeHistory": "[UA] Change History"
     }
 }
