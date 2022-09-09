@@ -9,7 +9,6 @@ interface ItemStatus {
   modifiedDate: string;
   description: string;
 }
-interface Statuses extends Array<ItemStatus> {}
 
 @Component({
   selector: "app-status-list",
