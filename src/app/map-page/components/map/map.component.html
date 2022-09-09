@@ -1,5 +1,9 @@
-<google-map [options]="options" width="100%"></google-map>
-<p *ngIf="isWaiting">Waiting for geolocation ...</p>
+<google-map [options]="options" width="100%">
 
-{{ 'placeholder.test' | translate }}
-<!-- TODO: just an example, to be removed -->
+    <map-marker *ngFor="let pin of pins"
+                [position]="{lat: pin.lat, lng: pin.lng}"
+                [clickable]="true"
+                (mapClick)="pinClicked($event, pin)"
+    ></map-marker>
+</google-map>
+<p *ngIf="isWaiting">{{'app.map.waiting' | translate}}</p>

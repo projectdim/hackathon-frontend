@@ -1,5 +1,11 @@
 {
     "placeholder": {
-        "test": "testUA"
+        "test": "placeholder translation ua"
+
+    },
+    "app" : {
+        "map" : {
+            "waiting" : "Очікування геолокації..."
+        }
     }
 }

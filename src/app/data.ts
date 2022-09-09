@@ -7,7 +7,7 @@ export interface Data {
 export interface Pin {
     id: string,
     lat: number,
-    lon: number
+    lng: number
 }
 
 // ENDPOINT - MARKER DETAILS per ID
@@ -19,7 +19,6 @@ export interface Marker {
     address: Adress,
     photos: Array<Photo>,
     statuses: Array<Status>
-
 }
 
 // GOOGLE MAPS DATA ABOUT LOCATION (?)

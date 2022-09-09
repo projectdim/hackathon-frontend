@@ -1,5 +1,11 @@
 {
     "placeholder": {
-        "test": "test"
+        "test": "placeholder translation en"
+
+    },
+    "app" : {
+        "map" : {
+            "waiting" : "Waiting for geolocation ..."
+        }
     }
 }

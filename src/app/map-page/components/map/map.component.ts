@@ -1,16 +1,18 @@
-import {Component, OnDestroy, OnInit, ViewChild} from '@angular/core';
+import {Component, Input, OnDestroy, Output, ViewChild} from '@angular/core';
 import {GeolocationService} from '@ng-web-apis/geolocation';
 import {Subject, takeUntil} from 'rxjs';
 import {GoogleMap} from '@angular/google-maps';
 import {googleMapOptions} from '@app/map-page/components/map/google-map.config';
+import {Pin} from '@app/data';
 import MapOptions = google.maps.MapOptions;
+import MapMouseEvent = google.maps.MapMouseEvent;
 
 @Component({
     selector: 'app-map',
     templateUrl: './map.component.html',
     styleUrls: ['./map.component.scss']
 })
-export class MapComponent implements OnInit, OnDestroy {
+export class MapComponent implements OnDestroy {
 
     @ViewChild(GoogleMap, {static: true})
     googleMap!: GoogleMap
@@ -22,18 +24,24 @@ export class MapComponent implements OnInit, OnDestroy {
     // TODO : better solution
     isWaiting = true;
 
+    @Input()
+    pins: Array<Pin> = []
+
+    @Output()
+    pinSelected = new Subject<Pin>();
+
     constructor(private geolocation: GeolocationService) {
         this.initLocation();
     }
 
     private initLocation() {
-        this.geolocation.pipe(takeUntil(this.onDestroy)).subscribe(geo => {
-            this.isWaiting = false;
-            this.googleMap.panTo({lat: geo.coords.latitude, lng: geo.coords.longitude});
-        });
-    }
 
-    ngOnInit(): void {
+        this.isWaiting = false;
+
+        // this.geolocation.pipe(takeUntil(this.onDestroy)).subscribe(geo => {
+        //     this.isWaiting = false;
+        //     this.googleMap.panTo({lat: geo.coords.latitude, lng: geo.coords.longitude});
+        // });
     }
 
     ngOnDestroy(): void {
@@ -41,4 +49,12 @@ export class MapComponent implements OnInit, OnDestroy {
         this.onDestroy.complete();
     }
 
+    printLatLon(event: google.maps.MapMouseEvent | google.maps.IconMouseEvent) {
+        console.dir(event.latLng?.lat());
+        console.dir(event.latLng?.lng());
+    }
+
+    pinClicked(event: MapMouseEvent, pin: Pin) {
+        this.pinSelected.next(pin);
+    }
 }

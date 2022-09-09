@@ -1,5 +1,11 @@
 {
     "placeholder": {
-        "test": "testRU"
+        "test": "placeholder translation ru"
+
+    },
+    "app" : {
+        "map" : {
+            "waiting" : "Ждем геолокации..."
+        }
     }
 }
