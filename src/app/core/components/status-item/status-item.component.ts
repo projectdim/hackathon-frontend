@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component, Input, OnInit } from "@angular/core";
 import { ItemStatus } from "@app/core/interfaces";
+import {Status} from '@app/data';
 
 
 @Component({
@@ -12,7 +13,7 @@ export class StatusItemComponent implements OnInit {
   constructor() {}
 
   @Input()
-  status: ItemStatus = {
+  status: Status = {
     id: "whatever",
     type: "road",
     statusKey: "stable",

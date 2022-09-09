@@ -34,11 +34,11 @@ export interface Photo {
 
 export interface Status {
     id: string,
-    type: StatusType,
-    statusKey: StatusKey // STABLE / INTACT / ACCESSIBLE
-    safetyLevel: number // 0 red  5 orange 10 green
+    type: string,
+    statusKey: string // STABLE / INTACT / ACCESSIBLE
+    safetyLevel: boolean
     distance: string | null
-    modifiedDate: Date
+    modifiedDate: string
     description: string
 }
 

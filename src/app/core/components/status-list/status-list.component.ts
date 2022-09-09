@@ -1,4 +1,5 @@
-import { ChangeDetectionStrategy, Component, OnInit } from "@angular/core";
+import {ChangeDetectionStrategy, Component, Input, OnInit} from "@angular/core";
+import {Status} from '@app/data';
 interface ItemStatus {
   id: string;
   type: string;
@@ -19,7 +20,8 @@ interface Statuses extends Array<ItemStatus> {}
 export class StatusListComponent implements OnInit {
   constructor() {}
 
-  statuses: Statuses = [
+  @Input()
+  statuses?: Array<Status> = [
     {
       id: "123",
       type: "building",
@@ -80,7 +82,7 @@ export class StatusListComponent implements OnInit {
       modifiedDate: "2022-09-09T16:38:20.777994",
       description:""
     },
-    
+
 
 
   ];
