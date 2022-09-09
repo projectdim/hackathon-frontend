@@ -1,7 +1,11 @@
 import { NgModule, Optional, SkipSelf } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import {MapPageComponent} from '@app/map-page/map-page.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+    {path:'map', component: MapPageComponent},
+    {path:'**', component: MapPageComponent}
+];
 
 @NgModule({
     imports: [RouterModule.forRoot(routes)],
