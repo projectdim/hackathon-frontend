@@ -1,21 +1,18 @@
 import {Injectable} from '@angular/core';
-import {Observable} from 'rxjs';
+import {map, Observable} from 'rxjs';
 import {Pin} from '@app/data';
-import {mockPins} from '@app/map-page/services/mock-markers';
+import {MarkerApiService} from '@app/map-page/services/marker-api.service';
 
 @Injectable({
     providedIn: 'root'
 })
 export class MarkerService {
 
-    constructor() {
+    constructor(private api: MarkerApiService) {
     }
 
     get(): Observable<Array<Pin>> {
-        return new Observable<Array<Pin>>((obs) => {
-            obs.next(mockPins);
-            obs.complete();
-        })
+        return this.api.markers();
     }
 
 }
